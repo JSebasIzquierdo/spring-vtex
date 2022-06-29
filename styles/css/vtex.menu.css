@@ -1,0 +1,21 @@
+.styledLinkContent--menu-item-1 {
+  color: #fff;
+  font-size: 80%;
+}
+
+.styledLinkContent--menu-item-2 {
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: -.5px;
+    font-weight: 400;
+  }
+
+  .styledLinkContent--menu-item {
+    margin: 0px 5px;
+    text-align: center;
+  }
+
+  .submenuWrapper--isOpen {
+    display: flex;
+    flex-direction: column;
+  }

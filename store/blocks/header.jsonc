@@ -1,0 +1,408 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop"]
+  },
+
+  //Cada header-row significa una "fila" más en el header
+
+  "header-layout.desktop": {
+    "children": ["header-row#1-desktop", "header-row#3-desktop"]
+  },
+
+  //La propiedad blockClass sirve para identificar o "individualizar" CSS, así poder modificar
+  // cada bloque de CSS individualmente.
+
+  "header-row#1-desktop": {
+    "children": [
+      "menu-item#localizador",
+      "menu-item#seguimiento",
+      "menu-item#nosotros",
+      "menu-item#chat"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "header1"
+    }
+  },
+
+  "menu-item#localizador": {
+    "props": {
+      "type": "custom",
+      "text": "LOCALIZADOR DE TIENDAS",
+      "blockClass": "menu-item-1"
+    }
+  },
+  "menu-item#seguimiento": {
+    "props": {
+      "type": "custom",
+      "text": "SIGUE TU PEDIDO",
+      "blockClass": "menu-item-1"
+    }
+  },
+  "menu-item#nosotros": {
+    "props": {
+      "type": "custom",
+      "text": "NUESTRA MARCA",
+      "blockClass": "menu-item-1"
+    }
+  },
+  "menu-item#chat": {
+    "props": {
+      "type": "custom",
+      "text": "CHAT DE SERVICIO AL CLIENTE",
+      "blockClass": "menu-item-1"
+    }
+  },
+
+  "header-row#3-desktop": {
+    "children": [
+      "flex-layout.row#menu",
+      "flex-layout.row#main-menu",
+      "flex-layout.row#login-menu"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "header3"
+    }
+  },
+
+  "flex-layout.row#menu": {
+    "children": ["menu#drawer"]
+  },
+
+  "flex-layout.row#main-menu": {
+    "children": [
+      "menu-item#colchones",
+      "menu-item#combos",
+      "menu-item#almohadas",
+      "logo#logoSpring",
+      "menu-item#basecamas",
+      "menu-item#ropadecama",
+      "menu-item#outlet"
+    ],
+    "props": {
+      "blockClass": "menu-items"
+    }
+  },
+
+  "flex-layout.row#login-menu": {
+    "children": []
+  },
+
+  "menu#drawer": {
+    "children": []
+  },
+
+  "menu-item#colchones": {
+    "props": {
+      "type": "custom",
+      "text": "COLCHONES",
+      "blockClass": "menu-item"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#colchones"] // Defining a submenu
+  },
+  "vtex.menu@2.x:submenu#colchones": {
+    "children": ["vtex.menu@2.x:menu#submenucolchones"]
+  },
+
+  "vtex.menu@2.x:menu#submenucolchones": {
+    "children": ["menu-item#size", "menu-item#money", "menu-item#firmeza"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "menu-item#size": {
+    "props": {
+      "type": "custom",
+      "text": "Por Tamaño",
+      "blockClass": "menu-item"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#sizeMenu"] // Defining a submenu
+  },
+  "vtex.menu@2.x:submenu#sizeMenu": {
+    "children": ["vtex.menu@2.x:menu#submenuSize"]
+  },
+
+  "vtex.menu@2.x:menu#submenuSize": {
+    "children": ["flex-layout.row#size1"],
+    "props": {
+      "blockClass": "submenuFlex"
+    }
+  },
+
+  "flex-layout.row#size1": {
+    "children": [
+      "flex-layout.col#size1",
+      "flex-layout.col#size2",
+      "flex-layout.col#size3",
+      "flex-layout.col#size4",
+      "flex-layout.col#size5",
+      "flex-layout.col#size6"
+    ],
+    "props": {
+      "blockClass": "menuSize1"
+    }
+  },
+
+  "flex-layout.col#size1": {
+    "children": [
+      "image#imgsize1",
+      "rich-text#text-size1",
+      "rich-text#description-size1"
+    ],
+    "props": {
+      "blockClass": "menu-sub-item-header"
+    }
+  },
+
+  "image#imgsize1": {
+    "props": {
+      "src": "https://www.colchonesspring.com.co/arquivos/icon-colchon-semisencillo.png?v=637888486047470000",
+      "maxHeight": 105,
+      "maxWidth": 105
+    }
+  },
+
+  "rich-text#text-size1": {
+    "props": {
+      "text": "Semisencillo",
+      "blockClass": "text-menu-1"
+    }
+  },
+
+  "rich-text#description-size1": {
+    "props": {
+      "text": "90x190cm",
+      "blockClass": "text-menu-1"
+    }
+  },
+  "flex-layout.col#size2": {
+    "children": [
+      "image#imgsize2",
+      "rich-text#text-size2",
+      "rich-text#description-size2"
+    ],
+    "props": {
+      "blockClass": "menu-sub-item-header"
+    }
+  },
+
+  "image#imgsize2": {
+    "props": {
+      "src": "https://www.colchonesspring.com.co/arquivos/icon-colchon-sencillo.png?v=637888486048730000",
+      "maxHeight": 105,
+      "maxWidth": 105
+    }
+  },
+
+  "rich-text#text-size2": {
+    "props": {
+      "text": "Sencillo",
+      "blockClass": "text-menu-1"
+    }
+  },
+
+  "rich-text#description-size2": {
+    "props": {
+      "text": "100x190cm",
+      "blockClass": "text-menu-1"
+    }
+  },
+
+  "flex-layout.col#size3": {
+    "children": [
+      "image#imgsize3",
+      "rich-text#text-size3",
+      "rich-text#description-size3"
+    ],
+    "props": {
+      "blockClass": "menu-sub-item-header"
+    }
+  },
+
+  "image#imgsize3": {
+    "props": {
+      "src": "https://www.colchonesspring.com.co/arquivos/icon-colchon-semidoble.png?v=637888486046400000",
+      "maxHeight": 105,
+      "maxWidth": 105
+    }
+  },
+
+  "rich-text#text-size3": {
+    "props": {
+      "text": "Semidoble",
+      "blockClass": "text-menu-1"
+    }
+  },
+
+  "rich-text#description-size3": {
+    "props": {
+      "text": "120x190cm",
+      "blockClass": "text-menu-1"
+    }
+  },
+  "flex-layout.col#size4": {
+    "children": [
+      "image#imgsize4",
+      "rich-text#text-size4",
+      "rich-text#description-size4"
+    ],
+    "props": {
+      "blockClass": "menu-sub-item-header"
+    }
+  },
+
+  "image#imgsize4": {
+    "props": {
+      "src": "https://www.colchonesspring.com.co/arquivos/icon-colchon-doble.png?v=637888486037470000",
+      "maxHeight": 105,
+      "maxWidth": 105
+    }
+  },
+
+  "rich-text#text-size4": {
+    "props": {
+      "text": "Doble",
+      "blockClass": "text-menu-1"
+    }
+  },
+
+  "rich-text#description-size4": {
+    "props": {
+      "text": "140x190cm",
+      "blockClass": "text-menu-1"
+    }
+  },
+  "flex-layout.col#size5": {
+    "children": [
+      "image#imgsize5",
+      "rich-text#text-size5",
+      "rich-text#description-size5"
+    ],
+    "props": {
+      "blockClass": "menu-sub-item-header"
+    }
+  },
+
+  "image#imgsize5": {
+    "props": {
+      "src": "https://www.colchonesspring.com.co/arquivos/icon-colchon-queen.png?v=637888486045130000",
+      "maxHeight": 105,
+      "maxWidth": 105
+    }
+  },
+
+  "rich-text#text-size5": {
+    "props": {
+      "text": "Queen",
+      "blockClass": "text-menu-1"
+    }
+  },
+
+  "rich-text#description-size5": {
+    "props": {
+      "text": "160x190cm",
+      "blockClass": "text-menu-1"
+    }
+  },
+  "flex-layout.col#size6": {
+    "children": [
+      "image#imgsize6",
+      "rich-text#text-size6",
+      "rich-text#description-size6"
+    ],
+    "props": {
+      "blockClass": "menu-sub-item-header"
+    }
+  },
+
+  "image#imgsize6": {
+    "props": {
+      "src": "https://www.colchonesspring.com.co/arquivos/icon-colchon-king.png?v=637888486038870000",
+      "maxHeight": 105,
+      "maxWidth": 105
+    }
+  },
+
+  "rich-text#text-size6": {
+    "props": {
+      "text": "King",
+      "blockClass": "text-menu-1"
+    }
+  },
+
+  "rich-text#description-size6": {
+    "props": {
+      "text": "200x200cm",
+      "blockClass": "text-menu-1"
+    }
+  },
+
+  "menu-item#money": {
+    "props": {
+      "type": "custom",
+      "text": "Por Presupuesto",
+      "blockClass": "menu-item"
+    }
+  },
+  "menu-item#firmeza": {
+    "props": {
+      "type": "custom",
+      "text": "Por Firmeza",
+      "blockClass": "menu-item"
+    }
+  },
+
+  "menu-item#combos": {
+    "props": {
+      "type": "custom",
+      "text": "COMBOS",
+      "blockClass": "menu-item"
+    }
+  },
+  "menu-item#almohadas": {
+    "props": {
+      "type": "custom",
+      "text": "ALMOHADAS",
+      "blockClass": "menu-item"
+    }
+  },
+
+  "logo#logoSpring": {
+    "props": {
+      "width": 140,
+      "height": 55,
+      "url": "https://nuestrobogota.com/wp-content/uploads/2021/09/nb-spring.jpeg"
+    }
+  },
+
+  "menu-item#basecamas": {
+    "props": {
+      "type": "custom",
+      "text": "BASE CAMAS Y MÁS",
+      "blockClass": "menu-item"
+    }
+  },
+  "menu-item#ropadecama": {
+    "props": {
+      "type": "custom",
+      "text": "ROPA DE CAMA",
+      "blockClass": "menu-item"
+    }
+  },
+  "menu-item#outlet": {
+    "props": {
+      "type": "custom",
+      "text": "OUTLET",
+      "blockClass": "menu-item"
+    }
+  },
+
+  "drawer": {
+    "children": []
+  }
+}

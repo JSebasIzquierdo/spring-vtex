@@ -1,0 +1,12 @@
+.sliderLayoutContainer {
+    padding: 0px !important;
+    
+}
+
+.sliderTrackContainer {
+    max-width: none;
+}
+
+.imageElement {
+    max-width: 100%;
+}

@@ -1,0 +1,424 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": ["flex-layout.row#footer-desktop"]
+  },
+  "footer-layout.mobile": {
+    "children": ["flex-layout.row#footer-mobile"]
+  },
+  "flex-layout.row#footer-desktop": {
+    "children": [
+      "flex-layout.col#us",
+      "flex-layout.col#products",
+      "flex-layout.col#services",
+      "flex-layout.col#experiences",
+      "flex-layout.col#news",
+      "flex-layout.col#contact",
+      "flex-layout.col#logos&payment"
+    ],
+    "props": {
+      "blockClass": "footerRow",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#us": {
+    "children": [
+      "rich-text#us",
+      "rich-text#history",
+      "rich-text#respaldo",
+      "rich-text#policies",
+      "rich-text#workwithus",
+      "rich-text#campus",
+      "rich-text#intranet"
+    ],
+    "props": {
+      "blockClass": "footerCol"
+    }
+  },
+
+  "rich-text#us": {
+    "props": {
+      "text": "Nosotros",
+      "blockClass": "titleFooter"
+    }
+  },
+
+  "rich-text#history": {
+    "props": {
+      "text": "Historia",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#respaldo": {
+    "props": {
+      "text": "Respaldo",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#policies": {
+    "props": {
+      "text": "Política de sostenibilidad",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#workwithus": {
+    "props": {
+      "text": "Trabaja con Nosostros",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#campus": {
+    "props": {
+      "text": "Campus Spring",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#intranet": {
+    "props": {
+      "text": "Intranet",
+      "blockClass": "itemFooter"
+    }
+  },
+
+  "flex-layout.col#products": {
+    "children": [
+      "rich-text#products",
+      "rich-text#colchones",
+      "rich-text#combos",
+      "rich-text#almohadas",
+      "rich-text#basecamasycabeceros",
+      "rich-text#protectores",
+      "rich-text#juegosdecama",
+      "rich-text#plumones",
+      "rich-text#camaselectricas",
+      "rich-text#tempur",
+      "rich-text#lineahotelera"
+    ],
+    "props": {
+      "blockClass": "footerCol"
+    }
+  },
+
+  "rich-text#products": {
+    "props": {
+      "text": "Productos",
+      "blockClass": "titleFooter"
+    }
+  },
+
+  "rich-text#colchones": {
+    "props": {
+      "text": "Colchones",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#combos": {
+    "props": {
+      "text": "Combos",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#almohadas": {
+    "props": {
+      "text": "Almohadas",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#basecamasycabeceros": {
+    "props": {
+      "text": "Basecamas y Cabeceros",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#protectores": {
+    "props": {
+      "text": "Protectores de colchón",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#juegosdecama": {
+    "props": {
+      "text": "Juegos de Cama",
+      "blockClass": "itemFooter"
+    }
+  },
+
+  "rich-text#plumones": {
+    "props": {
+      "text": "Plumones",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#camaselectricas": {
+    "props": {
+      "text": "Camas eléctricas",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#tempur": {
+    "props": {
+      "text": "Tempur",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#lineahotelera": {
+    "props": {
+      "text": "Línea Hotelera",
+      "blockClass": "itemFooter"
+    }
+  },
+
+  "flex-layout.col#services": {
+    "children": [
+      "rich-text#services",
+      "rich-text#avales",
+      "rich-text#disposicion"
+    ],
+    "props": {
+      "blockClass": "footerCol"
+    }
+  },
+
+  "rich-text#services": {
+    "props": {
+      "text": "Servicios",
+      "blockClass": "titleFooter"
+    }
+  },
+
+  "rich-text#avales": {
+    "props": {
+      "text": "Avales y Respaldo",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#disposicion": {
+    "props": {
+      "text": "Disposición final del colchón",
+      "blockClass": "itemFooter"
+    }
+  },
+
+  "flex-layout.col#experiences": {
+    "children": [
+      "rich-text#experiences",
+      "rich-text#momentos",
+      "rich-text#encuentratualmohada",
+      "rich-text#encuentratucolchon",
+      "rich-text#playlist",
+      "rich-text#tips",
+      "rich-text#manual"
+    ],
+    "props": {
+      "blockClass": "footerCol"
+    }
+  },
+
+  "rich-text#experiences": {
+    "props": {
+      "text": "Experiencias",
+      "blockClass": "titleFooter"
+    }
+  },
+
+  "rich-text#momentos": {
+    "props": {
+      "text": "Momentos Spring",
+      "blockClass": "itemFooter"
+    }
+  },
+
+  "rich-text#encuentratualmohada": {
+    "props": {
+      "text": "Encuentra tu almohada ideal",
+      "blockClass": "itemFooter"
+    }
+  },
+
+  "rich-text#encuentratucolchon": {
+    "props": {
+      "text": "Encuentra tu colchón ideal",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#playlist": {
+    "props": {
+      "text": "Playlist para dormir mejor",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#tips": {
+    "props": {
+      "text": "Tips para descansar mejor",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#manual": {
+    "props": {
+      "text": "Manual del sueño",
+      "blockClass": "itemFooter"
+    }
+  },
+
+  "flex-layout.col#news": {
+    "children": [
+      "rich-text#news",
+      "rich-text#faq",
+      "rich-text#terms",
+      "rich-text#promos",
+      "rich-text#promos-out",
+      "rich-text#datospersonales",
+      "rich-text#garantias",
+      "rich-text#distribuidores"
+    ],
+    "props": {
+      "blockClass": "footerCol"
+    }
+  },
+
+  "rich-text#news": {
+    "props": {
+      "text": "Novedades",
+      "blockClass": "titleFooter"
+    }
+  },
+
+  "rich-text#faq": {
+    "props": {
+      "text": "Preguntas frecuentes",
+      "blockClass": "itemFooter"
+    }
+  },
+
+  "rich-text#terms": {
+    "props": {
+      "text": "Términos y condiciones",
+      "blockClass": "itemFooter"
+    }
+  },
+
+  "rich-text#promos": {
+    "props": {
+      "text": "Promociones vigentes",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#promos-out": {
+    "props": {
+      "text": "Promociones vencidas",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#datospersonales": {
+    "props": {
+      "text": "Política de tratamiento de datos personales",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#garantias": {
+    "props": {
+      "text": "Garantías",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#distribuidores": {
+    "props": {
+      "text": "Distribuidores autorizados",
+      "blockClass": "itemFooter"
+    }
+  },
+
+  "flex-layout.col#contact": {
+    "children": [
+      "rich-text#contact",
+      "rich-text#contactphone",
+      "rich-text#telefono",
+      "rich-text#writeus",
+      "rich-text#correo",
+      "rich-text#nuestrastiendas",
+      "rich-text#derechos"
+    ],
+    "props": {
+      "blockClass": "footerCol"
+    }
+  },
+
+  "rich-text#contact": {
+    "props": {
+      "text": "Contacto",
+      "blockClass": "titleFooter"
+    }
+  },
+
+  "rich-text#contactphone": {
+    "props": {
+      "text": "Servicio al cliente Teléfono de contacto:",
+      "blockClass": "itemResaltedFooter"
+    }
+  },
+
+  "rich-text#telefono": {
+    "props": {
+      "text": "(601) 3077053",
+      "blockClass": "itemFooter"
+    }
+  },
+
+  "rich-text#writeus": {
+    "props": {
+      "text": "Escríbenos a:",
+      "blockClass": "itemResaltedFooter"
+    }
+  },
+
+  "rich-text#correo": {
+    "props": {
+      "text": "scliente@spring.com.co",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#nuestrastiendas": {
+    "props": {
+      "text": "ENCUENTRA NUESTRAS TIENDAS",
+      "blockClass": "itemFooter"
+    }
+  },
+  "rich-text#derechos": {
+    "props": {
+      "text": "Derechos de retracto",
+      "blockClass": "itemFooter"
+    }
+  },
+  "flex-layout.col#logos&payment": {
+    "children": [],
+    "props": {
+      "blockClass": "footerCol"
+    }
+  },
+
+  "flex-layout.row#footer-mobile": {
+    "children": ["flex-layout.col#us",
+      "flex-layout.col#products",
+      "flex-layout.col#services",
+      "flex-layout.col#experiences",
+      "flex-layout.col#news",
+      "flex-layout.col#contact",
+      "flex-layout.col#logos&payment"]
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "https://facebook.com/foo", "name": "Facebook" },
+        { "url": "https://twitter.com/foo", "name": "Twitter" }
+      ]
+    }
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": ["mastercard", "visa", "diners club"]
+    }
+  }
+}

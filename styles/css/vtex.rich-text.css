@@ -1,0 +1,97 @@
+.paragraph--itemFooter {
+  color: #fff;
+  margin: 0px;
+  font-size: 90%;
+  font-weight: 200%;
+  padding: 3px 0px;
+}
+
+.paragraph--itemFooter:hover {
+  cursor: pointer;
+  color: #101010;
+}
+
+.paragraph--titleFooter {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.paragraph--itemResaltedFooter {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 16px;
+  margin: 0px;
+}
+
+.paragraph--bigQuestion {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 0px;
+}
+
+.paragraph--answerQuestion {
+  font-size: 23px;
+  font-weight: 300;
+  color: #fff;
+  margin: 0;
+}
+
+.paragraph--title-news {
+  font-size: 1.2em;
+  padding: 10px 0px;
+  margin: 0px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.paragraph--description-news {
+  font-size: 1.1em;
+  font-weight: lighter;
+  margin: 0px 0px 10px;
+  color: #101010;
+}
+
+.paragraph--servicesText {
+  text-align: center;
+  margin: 0px;
+}
+
+.paragraph--restsText {
+  text-align: center;
+  margin: 0px;
+}
+
+.paragraph--title-highlight {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 5px;
+  margin: 0px;
+}
+
+.paragraph--description-highlight {
+  font-size: 15px;
+  margin: 0px 0px 10px;
+}
+
+.paragraph--titleSection {
+  margin: 20px 0px;
+}
+
+.paragraph--readmore {
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.paragraph--readmore:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.paragraph--text-menu-1 {
+    margin: 0px;
+    font-weight: lighter;
+   
+}

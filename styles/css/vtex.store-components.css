@@ -1,0 +1,22 @@
+.imageElement--newsImages {
+  width: 100%;
+}
+
+.imageElement--logoImage {
+  width: 80px;
+  margin: 0px 3px;
+}
+
+.imageElement--servicesIcon {
+  width: 80px;
+  height: 80px;
+}
+
+.imageElement--restsIcon {
+  width: 80px;
+  height: 80px;
+}
+
+.imageElement--image-highlight {
+  width: 65%;
+}

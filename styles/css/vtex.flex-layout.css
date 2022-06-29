@@ -1,0 +1,110 @@
+.flexRowContent--menu-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexColChild--footerCol {
+  height: unset !important;
+}
+
+.flexRow--footerRow {
+  background-color: #383838;
+  padding: 30px 10px 20px;
+}
+
+.flexCol--footerCol {
+  max-width: 160px !important;
+  padding: 9px;
+}
+
+.flexCol--logosLayout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexCol--questionClass {
+  background-color: #adb8c0;
+  padding: 0px 10px;
+  margin: 10px 10px;
+}
+
+.flexColChild--logosLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.flexCol--highlightClass{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+
+}
+
+.flexCol--restsClass{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+
+}
+
+
+.flexColChild--restsClass{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexColChild--highlightClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexColChild--servicesClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 10px;
+}
+
+.flexRow--servicesClass {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.flexRow--highlightsContent {
+   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.flexColChild--newsClass {
+  margin: 0px 10px;
+}
+
+.flexRow--flexNews {
+  margin: 20px 0px;
+}
+
+.flexRow--logosClass {
+  margin: 20px 0px;
+}
+
+.flexRow--questionsClass {
+  margin: 20px 0px;
+}
+
+.flexCol--menu-sub-item-header {
+  margin: 20px 10px;
+}

@@ -1,0 +1,687 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#promoImages",
+      "rich-text#descansa-mejor",
+      "flex-layout.row#descansa-mejor",
+      "image#bannerSimphony",
+      "rich-text#highlights",
+      "flex-layout.row#highlights",
+      "flex-layout.row#services",
+      "flex-layout.row#questions",
+      "flex-layout.row#logos",
+      "rich-text#novedades",
+      "flex-layout.row#news"
+    ]
+  },
+
+  "list-context.image-list#promoImages": {
+    "children": ["slider-layout#promo-images"],
+    "props": {
+      "height": 600,
+      "images": [
+        {
+          "image": "https://www.colchonesspring.com.co/arquivos/01-OFERTAS-JUN-22.jpg?v=637915268364670000",
+          "description": "first slide"
+        },
+        {
+          "image": "https://www.colchonesspring.com.co/arquivos/02-INFINITE-JUN-23.jpg?v=637915934583400000",
+          "description": "second slide"
+        },
+        {
+          "image": "https://www.colchonesspring.com.co/arquivos/03-SUNRISE-JUN-23.jpg?v=637915934602470000",
+          "description": "third slide"
+        },
+        {
+          "image": "https://www.colchonesspring.com.co/arquivos/04-ALPHA-JUN-23.jpg?v=637915934557730000",
+          "description": "fourth slide"
+        }
+      ]
+    }
+  },
+  "slider-layout#promo-images": {
+    "props": {
+      "showNavigationArrows": "never",
+      "autoplay": {
+        "timeout": 20000
+      },
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false
+    }
+  },
+
+  "rich-text#descansa-mejor": {
+    "props": {
+      "text": "Descansa mejor",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-2",
+      "blockClass": "titleSection"
+    }
+  },
+
+  "flex-layout.row#descansa-mejor": {
+    "props": {
+      "blockClass": "servicesClass"
+    },
+    "children": [
+      "flex-layout.col#rest1",
+      "flex-layout.col#rest2",
+      "flex-layout.col#rest3",
+      "flex-layout.col#rest4",
+      "flex-layout.col#rest5",
+      "flex-layout.col#rest6"
+    ]
+  },
+
+  "flex-layout.col#rest1": {
+    "children": ["image#rest1", "rich-text#rest1"],
+    "props": { "blockClass": "restsClass" }
+  },
+  "flex-layout.col#rest2": {
+    "children": ["image#rest2", "rich-text#rest2"],
+    "props": { "blockClass": "restsClass" }
+  },
+  "flex-layout.col#rest3": {
+    "children": ["image#rest3", "rich-text#rest3"],
+    "props": { "blockClass": "restsClass" }
+  },
+  "flex-layout.col#rest4": {
+    "children": ["image#rest4", "rich-text#rest4"],
+    "props": { "blockClass": "restsClass" }
+  },
+  "flex-layout.col#rest5": {
+    "children": ["image#rest5", "rich-text#rest5"],
+    "props": { "blockClass": "restsClass" }
+  },
+  "flex-layout.col#rest6": {
+    "children": ["image#rest6", "rich-text#rest6"],
+    "props": { "blockClass": "restsClass" }
+  },
+
+  "image#rest1": {
+    "props": {
+      "src": "https://colchonesspring.vteximg.com.br/arquivos/ENVIOS-GRIS-JUN23.png?v=637916153651900000",
+      "blockClass": "restsIcon"
+    }
+  },
+
+  "rich-text#rest1": {
+    "props": {
+      "text": "Envíos 72 hrs",
+      "blockClass": "restsText"
+    }
+  },
+  "image#rest2": {
+    "props": {
+      "src": "https://colchonesspring.vteximg.com.br/arquivos/COLCHON-BASE-CAMA-GRIS.png?v=637896945153200000",
+      "blockClass": "restsIcon"
+    }
+  },
+
+  "rich-text#rest2": {
+    "props": {
+      "text": "Colchones Ortopédicos",
+      "blockClass": "restsText"
+    }
+  },
+  "image#rest3": {
+    "props": {
+      "src": "https://colchonesspring.vteximg.com.br/arquivos/OUTLET-GRIS.png?v=637896976725000000",
+      "blockClass": "restsIcon"
+    }
+  },
+
+  "rich-text#rest3": {
+    "props": {
+      "text": "Productos Outlet",
+      "blockClass": "restsText"
+    }
+  },
+  "image#rest4": {
+    "props": {
+      "src": "https://colchonesspring.vteximg.com.br/arquivos/BASE-CABECERO-GRIS.png?v=637896976722670000",
+      "blockClass": "restsIcon"
+    }
+  },
+
+  "rich-text#rest4": {
+    "props": {
+      "text": "Cabeceros y Base camas",
+      "blockClass": "restsText"
+    }
+  },
+  "image#rest5": {
+    "props": {
+      "src": "https://colchonesspring.vteximg.com.br/arquivos/ALMOHADAS-GRIS.png?v=637896976719670000",
+      "blockClass": "restsIcon"
+    }
+  },
+
+  "rich-text#rest5": {
+    "props": {
+      "text": "Almohadas",
+      "blockClass": "restsText"
+    }
+  },
+  "image#rest6": {
+    "props": {
+      "src": "https://colchonesspring.vteximg.com.br/arquivos/PROTECTOR-GRIS.png?v=637896976727370000",
+      "blockClass": "restsIcon"
+    }
+  },
+
+  "rich-text#rest6": {
+    "props": {
+      "text": "Ropa de Cama",
+      "blockClass": "servicesText"
+    }
+  },
+
+  "image#bannerSimphony": {
+    "props": {
+      "src": "https://www.colchonesspring.com.co/arquivos/07-SIMPHONY.jpg?v=637916166888730000"
+    }
+  },
+
+  "rich-text#highlights": {
+    "props": {
+      "text": "Productos Destacados",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-2"
+    }
+  },
+
+  "flex-layout.row#highlights": {
+    "children": [
+      "flex-layout.col#highlights1",
+      "flex-layout.col#highlights2",
+      "flex-layout.col#highlights3"
+    ],
+    "props": {
+      "blockClass": "highlightsContent"
+    }
+  },
+
+  "flex-layout.col#highlights1": {
+    "children": [
+      "rich-text#title-highlight1",
+      "rich-text#description-highlight1",
+      "image#highlight1"
+    ],
+    "props": {
+      "blockClass": "highlightClass"
+    }
+  },
+
+  "rich-text#title-highlight1": {
+    "props": {
+      "text": "Almohadas",
+      "blockClass": "title-highlight"
+    }
+  },
+
+  "rich-text#description-highlight1": {
+    "props": {
+      "text": "Redefine tu descanso",
+      "blockClass": "description-highlight"
+    }
+  },
+
+  "image#highlight1": {
+    "props": {
+      "src": "https://www.colchonesspring.com.co/arquivos/08-ALMOHADAS-JUN-13.jpg?v=637908053851030000",
+      "blockClass": "image-highlight"
+    }
+  },
+  "flex-layout.col#highlights2": {
+    "children": [
+      "rich-text#title-highlight2",
+      "rich-text#description-highlight2",
+      "image#highlight2"
+    ],
+    "props": {
+      "blockClass": "highlightClass"
+    }
+  },
+
+  "rich-text#title-highlight2": {
+    "props": {
+      "text": "Combo Descanso Especial",
+      "blockClass": "title-highlight"
+    }
+  },
+
+  "rich-text#description-highlight2": {
+    "props": {
+      "text": "Redefine tu descanso",
+      "blockClass": "description-highlight"
+    }
+  },
+
+  "image#highlight2": {
+    "props": {
+      "src": "https://www.colchonesspring.com.co/arquivos/09-COMBO-SPECIAL-JUN-22.jpg?v=637915268411600000",
+      "blockClass": "image-highlight"
+    }
+  },
+  "flex-layout.col#highlights3": {
+    "children": [
+      "rich-text#title-highlight3",
+      "rich-text#description-highlight3",
+      "image#highlight3"
+    ],
+    "props": {
+      "blockClass": "highlightClass"
+    }
+  },
+
+  "rich-text#title-highlight3": {
+    "props": {
+      "text": "Ropa de Cama",
+      "blockClass": "title-highlight"
+    }
+  },
+
+  "rich-text#description-highlight3": {
+    "props": {
+      "text": "Redefine tu descanso",
+      "blockClass": "description-highlight"
+    }
+  },
+
+  "image#highlight3": {
+    "props": {
+      "src": "https://www.colchonesspring.com.co/arquivos/10-ROPA-JUN-13.jpg?v=637908053203900000",
+      "blockClass": "image-highlight"
+    }
+  },
+
+  "flex-layout.row#services": {
+    "props": {
+      "blockClass": "servicesClass"
+    },
+    "children": [
+      "flex-layout.col#service1",
+      "flex-layout.col#service2",
+      "flex-layout.col#service3",
+      "flex-layout.col#service4",
+      "flex-layout.col#service5",
+      "flex-layout.col#service6"
+    ]
+  },
+
+  "flex-layout.col#service1": {
+    "children": ["image#service1", "rich-text#service1"],
+    "props": { "blockClass": "servicesClass" }
+  },
+  "flex-layout.col#service2": {
+    "children": ["image#service2", "rich-text#service2"],
+    "props": { "blockClass": "servicesClass" }
+  },
+  "flex-layout.col#service3": {
+    "children": ["image#service3", "rich-text#service3"],
+    "props": { "blockClass": "servicesClass" }
+  },
+  "flex-layout.col#service4": {
+    "children": ["image#service4", "rich-text#service4"],
+    "props": { "blockClass": "servicesClass" }
+  },
+  "flex-layout.col#service5": {
+    "children": ["image#service5", "rich-text#service5"],
+    "props": { "blockClass": "servicesClass" }
+  },
+  "flex-layout.col#service6": {
+    "children": ["image#service6", "rich-text#service6"],
+    "props": { "blockClass": "servicesClass" }
+  },
+
+  "image#service1": {
+    "props": {
+      "src": "https://colchonesspring.vteximg.com.br/arquivos/clubg.png?v=637896929139730000",
+      "blockClass": "servicesIcon"
+    }
+  },
+
+  "rich-text#service1": {
+    "props": {
+      "text": "Club momentos",
+      "blockClass": "servicesText"
+    }
+  },
+  "image#service2": {
+    "props": {
+      "src": "https://colchonesspring.vteximg.com.br/arquivos/Sello-gris-jun10.png?v=637907258015300000",
+      "blockClass": "servicesIcon"
+    }
+  },
+
+  "rich-text#service2": {
+    "props": {
+      "text": "Avales y Respaldo",
+      "blockClass": "servicesText"
+    }
+  },
+  "image#service3": {
+    "props": {
+      "src": "https://colchonesspring.vteximg.com.br/arquivos/clubr.png?v=637896929142100000",
+      "blockClass": "servicesIcon"
+    }
+  },
+
+  "rich-text#service3": {
+    "props": {
+      "text": "Protector",
+      "blockClass": "servicesText"
+    }
+  },
+  "image#service4": {
+    "props": {
+      "src": "https://colchonesspring.vteximg.com.br/arquivos/DISPOSICION-GRIS.png?v=637896929146170000",
+      "blockClass": "servicesIcon"
+    }
+  },
+
+  "rich-text#service4": {
+    "props": {
+      "text": "Disposición final del colchón",
+      "blockClass": "servicesText"
+    }
+  },
+  "image#service5": {
+    "props": {
+      "src": "https://colchonesspring.vteximg.com.br/arquivos/HOTELERA-GRIS.png?v=637896929148370000",
+      "blockClass": "servicesIcon"
+    }
+  },
+
+  "rich-text#service5": {
+    "props": {
+      "text": "Línea Hotelera",
+      "blockClass": "servicesText"
+    }
+  },
+  "image#service6": {
+    "props": {
+      "src": "https://colchonesspring.vteximg.com.br/arquivos/SERVICIO-CLIENTE-GRIS.png?v=637896929157270000",
+      "blockClass": "servicesIcon"
+    }
+  },
+
+  "rich-text#service6": {
+    "props": {
+      "text": "Servicio al cliente",
+      "blockClass": "servicesText"
+    }
+  },
+
+  "flex-layout.row#questions": {
+    "props": {
+      "blockClass": "questionsClass"
+    },
+    "children": ["flex-layout.col#question1", "flex-layout.col#question2"]
+  },
+
+  "flex-layout.col#question1": {
+    "props": {
+      "blockClass": "questionClass"
+    },
+    "children": ["rich-text#question1", "rich-text#answer1"]
+  },
+
+  "rich-text#question1": {
+    "props": {
+      "text": "¿Qué hacer con tu colchón antiguo?",
+      "blockClass": "bigQuestion"
+    }
+  },
+
+  "rich-text#answer1": {
+    "props": {
+      "text": "Aquí te contamos qué puedes hacer",
+      "blockClass": "answerQuestion"
+    }
+  },
+
+  "flex-layout.col#question2": {
+    "props": {
+      "blockClass": "questionClass"
+    },
+    "children": ["rich-text#question2", "rich-text#answer2"]
+  },
+  "rich-text#question2": {
+    "props": {
+      "text": "¿Ya encontraste tu almohada perfecta?",
+      "blockClass": "bigQuestion"
+    }
+  },
+
+  "rich-text#answer2": {
+    "props": {
+      "text": "Encuéntrala con este test",
+      "blockClass": "answerQuestion"
+    }
+  },
+
+  "flex-layout.row#logos": {
+    "props": {
+      "blockClass": "logosClass"
+    },
+    "children": ["flex-layout.col#logos"]
+  },
+
+  "flex-layout.col#logos": {
+    "children": [
+      "image#logo1",
+      "image#logo2",
+      "image#logo3",
+      "image#logo4",
+      "image#logo5"
+    ],
+    "props": {
+      "blockClass": "logosLayout"
+    }
+  },
+
+  "image#logo1": {
+    "props": {
+      "src": "https://www.colchonesspring.com.co/arquivos/certificadocalidad1.png?v=637876032682500000",
+      "blockClass": "logoImage"
+    }
+  },
+  "image#logo2": {
+    "props": {
+      "src": "https://www.colchonesspring.com.co/arquivos/certificadocalidad2.png?v=637876032684230000",
+      "blockClass": "logoImage"
+    }
+  },
+  "image#logo3": {
+    "props": {
+      "src": "https://www.colchonesspring.com.co/arquivos/certificadocalidad3.png?v=637876032685500000",
+      "blockClass": "logoImage"
+    }
+  },
+  "image#logo4": {
+    "props": {
+      "src": "https://www.colchonesspring.com.co/arquivos/CALIDAD-ICONTEC-01.png?v=637889135139470000",
+      "blockClass": "logoImage"
+    }
+  },
+  "image#logo5": {
+    "props": {
+      "src": "https://www.colchonesspring.com.co/arquivos/ISO-9001.png?v=637889123918230000",
+      "blockClass": "logoImage"
+    }
+  },
+
+  "rich-text#novedades": {
+    "props": {
+      "text": "Novedades",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-2",
+      "blockClass": "titleSection"
+    }
+  },
+
+  "flex-layout.row#news": {
+    "children": [
+      "flex-layout.col#news1",
+      "flex-layout.col#news2",
+      "flex-layout.col#news3"
+    ],
+    "props": {
+      "blockClass": "flexNews"
+    }
+  },
+
+  "flex-layout.col#news1": {
+    "children": [
+      "image#imgnews1",
+      "rich-text#newstitle1",
+      "rich-text#newsdescription1",
+      "rich-text#link1"
+    ],
+    "props": {
+      "blockClass": "newsClass"
+    }
+  },
+
+  "image#imgnews1": {
+    "props": {
+      "src": "https://www.colchonesspring.com.co/arquivos/novedad1.jpg?v=637876032724870000",
+      "maxHeight": 240,
+      "blockClass": "newsImages"
+    }
+  },
+
+  "rich-text#newstitle1": {
+    "props": {
+      "text": "¡En 2021 recolectamos 11,5 toneladas de plástico!",
+      "textAlignment": "LEFT",
+      "blockClass": "title-news"
+    }
+  },
+
+  "rich-text#newsdescription1": {
+    "props": {
+      "text": "Descubre nuestra política de sostenibilidad y cuidado del planeta",
+      "textAlignment": "LEFT",
+      "blockClass": "description-news"
+    }
+  },
+
+  "rich-text#link1": {
+    "props": {
+      "text": "Leer Más",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "readmore"
+    }
+  },
+
+  "flex-layout.col#news2": {
+    "children": [
+      "image#imgnews2",
+      "rich-text#newstitle2",
+      "rich-text#newsdescription2",
+      "rich-text#link2"
+    ],
+    "props": {
+      "blockClass": "newsClass"
+    }
+  },
+
+  "image#imgnews2": {
+    "props": {
+      "src": "https://www.colchonesspring.com.co/arquivos/novedad2.jpg?v=637876032725800000",
+      "maxHeight": 240,
+      "blockClass": "newsImages"
+    }
+  },
+
+  "rich-text#newstitle2": {
+    "props": {
+      "text": "Lanzamos el primer colchón en Colombia amigable con el medio ambiente",
+      "textAlignment": "LEFT",
+      "blockClass": "title-news"
+    }
+  },
+
+  "rich-text#newsdescription2": {
+    "props": {
+      "text": "Hecho con 92% de materiales amigables con el planeta. Conócelo.",
+      "textAlignment": "LEFT",
+      "blockClass": "description-news"
+    }
+  },
+
+  "rich-text#link2": {
+    "props": {
+      "text": "Leer Más",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "readmore"
+    }
+  },
+
+  "flex-layout.col#news3": {
+    "children": [
+      "image#imgnews3",
+      "rich-text#newstitle3",
+      "rich-text#newsdescription3",
+      "rich-text#link3"
+    ],
+    "props": {
+      "blockClass": "newsClass"
+    }
+  },
+
+  "image#imgnews3": {
+    "props": {
+      "src": "https://www.colchonesspring.com.co/arquivos/novedad3.jpg?v=637876032726130000",
+      "maxHeight": 240,
+      "blockClass": "newsImages"
+    }
+  },
+
+  "rich-text#newstitle3": {
+    "props": {
+      "text": "¡Estamos para cumplir sueños!",
+      "textAlignment": "LEFT",
+      "blockClass": "title-news"
+    }
+  },
+
+  "rich-text#newsdescription3": {
+    "props": {
+      "text": "Conoce nuestra alianza con Make a Wish y descubre cómo ayudamos a los sueños de los colombianos.",
+      "textAlignment": "LEFT",
+      "blockClass": "description-news"
+    }
+  },
+
+  "rich-text#link3": {
+    "props": {
+      "text": "Leer Más",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "readmore"
+    }
+  },
+
+  "rich-text": {
+    "props": {
+      "text": "VTEX Store Framework",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  }
+}
